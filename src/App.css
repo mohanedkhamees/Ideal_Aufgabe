@@ -1,19 +1,118 @@
-.App {
-  text-align: center;
+.nav {
+  background-color: #f3f3f3;
+  justify-content: center;
 }
+
+#nav-logo {
+  /* width: 15%; */
+  height: 8vmin;
+}
+
+.container-app {
+  height: 82vh;
+  background-image: url("../public/bg5.jpg");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-app1 {
+
+  max-width: 66%;
+}
+
+.container-card {
+  margin-top: 67px;
+  border-radius: 10px;
+  padding: 17px;
+  justify-content: space-between;
+  background-color: #0082c8;
+}
+
+#app-title {
+  color: white;
+  padding-bottom: 1rem;
+  /* margin-bottom: 3rem; */
+  text-align: center;
+  /* font-size: 1rem !important; */
+}
+
+
+
+
+/* -----------------Card------------------- */
+
+
+
+
+
+.profil-card {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px !important;
+  /* width: 300px !important; */
+  background: none
+}
+
+.card-title {
+  margin-bottom: 1rem !important;
+}
+
+.card-text {
+  /* text-align: center;
+  font-size: 15px; */
+}
+
+#logo-card {
+  height: 20vmin;
+}
+
+.vstack {
+  align-items: center;
+  margin-top: 1rem
+}
+
+#absatz {
+  color: white;
+}
+
+p {
+
+  margin-bottom: 0 !important;
+}
+
+.btn.btn-login1 {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  background-color: #f59b69;
+}
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  text-align: center;
+  border-radius: 10px;
+}
+
+
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,17 +121,61 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+
+
+/* --------mediaQuery-------- */
+@media screen and (min-width: 280px) and (max-width: 601px) {
+  #app-title {
+    font-size: 20px;
+  }
+
+  #card-title {
+    text-align: center !important;
+    font-size: 15px;
+  }
+
+  .card-text1 {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  #logo-card {
+    height: 10vmin;
+  }
+
+  .card-grid {
+    width: 100% !important;
+  }
+
+  .profil-card {
+    padding: 10px;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* * {
+    font-size: 15px;
+  } */
+
+  .card-grid {
+    width: 50% !important;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 1025px) {
+
+
+  .card-grid {
+    width: 33% !important;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+
+#card-footer {
+  font-weight: 100;
+  color: #e8e8e8;
+  margin: 15px;
 }
